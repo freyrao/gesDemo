@@ -36,15 +36,15 @@ public class GestureFilter implements IGestureFilter {
             }
         }
 
-        // 从后台回到前台时间>30s显示
-        long time = AppUtil.toForegroundTime() / 1000;
-        if(time > 30) {
-            return true;
-        }
-
         // 已经解锁，没有退出，不用显示
         if(GestureController.isUnlock) {
-            return false;
+            // 从后台回到前台时间>30s显示
+            long time = AppUtil.toForegroundTime() / 1000;
+            if(time > 30) {
+                return true;
+            } else {
+                return false;
+            }
         }
 
         return true;

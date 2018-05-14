@@ -44,9 +44,9 @@ public class AppUtil {
      * @param context
      */
     public static void saveBackgroundTime(Context context) {
-        if(!isAppOnForeground(context)) {
+        //if(!isAppOnForeground(context)) {
             toBackgroundTime = System.currentTimeMillis();
-        }
+        //}
     }
 
     /**
@@ -54,7 +54,6 @@ public class AppUtil {
      * @return
      */
     public static long toForegroundTime() {
-        Log.e("ttt", "----" + toBackgroundTime + " " + System.currentTimeMillis());
         return System.currentTimeMillis() - toBackgroundTime;
     }
 
