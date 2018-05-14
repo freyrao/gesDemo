@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="gesture_lock_view">
+        <attr name="point_normal_drawable" format="reference"></attr>
+        <attr name="point_selected_drawable" format="reference"></attr>
+        <attr name="line_width" format="dimension"></attr>
+        <attr name="line_color" format="color"></attr>
+        <attr name="point_normal_color" format="color"></attr>
+        <attr name="point_selected_color" format="color"></attr>
+    </declare-styleable>
+</resources>
