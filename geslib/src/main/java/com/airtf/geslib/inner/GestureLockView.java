@@ -1,4 +1,4 @@
-package com.airtf.geslib;
+package com.airtf.geslib.inner;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -12,6 +12,8 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+
+import com.airtf.geslib.R;
 
 import java.util.ArrayList;
 import java.util.List;

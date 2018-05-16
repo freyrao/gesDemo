@@ -1,13 +1,11 @@
-package com.airtf.geslib;
+package com.airtf.geslib.inner;
 
 import android.app.Activity;
-import android.util.Log;
 
 import com.airtf.util.AppUtil;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Timer;
 
 /**
  * 手势识别过滤器，实现过滤规则，判断某些页面或者场景不用显示手势密码
@@ -36,18 +34,14 @@ public class GestureFilter implements IGestureFilter {
             }
         }
 
-        // 已经解锁，没有退出，不用显示
-        if(GestureController.isUnlock) {
-            // 从后台回到前台时间>30s显示
-            long time = AppUtil.toForegroundTime() / 1000;
-            if(time > 30) {
-                return true;
-            } else {
-                return false;
-            }
+        // 从后台回到前台时间>30s显示
+        long time = AppUtil.toForegroundTime() / 1000;
+        if(time > 30) {
+            return true;
+        } else {
+            return false;
         }
 
-        return true;
     }
 
 }

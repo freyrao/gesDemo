@@ -19,7 +19,7 @@
         android:textColor="@color/cl_djs_blue"
         android:textSize="@dimen/w_50px"
         />
-    <com.airtf.geslib.GestureLockView
+    <com.airtf.geslib.inner.GestureLockView
         android:id="@+id/glv"
         android:layout_width="match_parent"
         android:layout_height="0dp"

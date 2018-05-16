@@ -1,9 +1,8 @@
-package com.airtf.geslib;
+package com.airtf.geslib.inner;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.text.TextUtils;
-import android.util.Log;
 
 /**
  * 手势密码辅助类，可设置手势回调
@@ -81,9 +80,9 @@ public class GestureLockHelper {
         glv.setGesEnable(true);
     }
 
-    public void resetMode(int mode) {
-        this.setMode(mode);
-    }
+//    public void resetMode(int mode) {
+//        this.setMode(mode);
+//    }
 
     private void init() {
         glv.setOnGestureLockListener(new GestureLockView.OnGestureLockListener() {
